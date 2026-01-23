@@ -1,53 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Darty</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #1f2937; }
-        h1 { border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; color: #111827; }
-        h2 { margin-top: 30px; color: #374151; font-size: 1.25em; }
-        h3 { color: #4b5563; font-size: 1.1em; margin-top: 20px; }
-        ul { margin-bottom: 15px; }
-        li { margin-bottom: 5px; }
-        .footer { margin-top: 50px; border-top: 1px solid #e5e7eb; pt-5; font-size: 0.9em; color: #6b7280; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #6366f1;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        h3 {
+            color: #4b5563;
+            margin-top: 25px;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        .contact {
+            background-color: #f3f4f6;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #6366f1;
+            margin-top: 40px;
+        }
+
+        .highlight {
+            background-color: #fef3c7;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        strong {
+            color: #1f2937;
+        }
+
+        a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .summary {
+            background-color: #e0e7ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .summary h2 {
+            margin-top: 0;
+            border: none;
+            padding-top: 0;
+        }
     </style>
 </head>
+
 <body>
     <h1>Privacy Policy for Darty</h1>
-    <p><strong>Last Updated:</strong> January 22, 2026</p>
-    <p><strong>Darty</strong> ("we", "our", or "us") provides a darts scoring and statistics application. This Privacy Policy explains how we handle your information.</p>
-    <h2>1. Data Collection & Usage</h2>
-    <h3>1.1 Personal Data & Local Storage</h3>
-    <p>Darty is designed to work primarily <strong>offline</strong>. We do <strong>not</strong> require you to create an account, provide an email address, or sign in to use the app. All game data, statistics, and user profiles are stored locally on your device.</p>
-    <h3>1.2 Device Information</h3>
-    <p>We may collect basic, non-identifying technical data required for app functionality (e.g., device model, operating system version) to assist with compatibility and crash reporting.</p>
-    <h3>1.3 Identifiers (Android Advertising ID / App Set ID)</h3>
-    <p>The application uses third-party services that may collect device identifiers (such as the Android Advertising ID or App Set ID) for fraud prevention, security, and subscription management purposes. We do not use these identifiers for behavioral advertising or marketing tracking.</p>
-    <h2>2. Third-Party Services</h2>
-    <p>We use the following third-party services which may collect data according to their own privacy policies:</p>
+    <p class="last-updated"><strong>Last Updated:</strong> January 23, 2026</p>
+
+    <p>Darty ("we", "our", or "us") provides a darts scoring and statistics application. This Privacy Policy explains what data we collect, how we use it, and your rights regarding your information.</p>
+
+    <hr>
+
+    <h2>1. Overview</h2>
+    <p>Darty is designed to work primarily <strong>offline</strong> and does not require you to create an account or sign in. All game data, statistics, and user profiles are stored <strong>locally on your device</strong>. We do not operate a cloud database or store your personal information on our servers.</p>
+
+    <hr>
+
+    <h2>2. Data We Collect</h2>
+
+    <h3>2.1 Game Data (Stored Locally Only)</h3>
+    <p>The following data is stored <strong>only on your device</strong> and is never transmitted to our servers:</p>
     <ul>
-        <li><strong>RevenueCat:</strong> Used to manage subscription entitlements and purchase receipts.</li>
-        <li><strong>Expo:</strong> Used for over-the-air updates and monitoring app stability.</li>
-        <li><strong>Google Play Services:</strong> Used for core Android functionality.</li>
+        <li>Player names and profiles</li>
+        <li>Game scores and statistics</li>
+        <li>Tournament results and history</li>
+        <li>Custom game settings and preferences</li>
+        <li>Achievement progress</li>
     </ul>
-    <h2>3. Subscriptions & Financial Data</h2>
-    <p>We use <strong>RevenueCat</strong> to facilitate potential in-app purchases. While the app may currently be free, the infrastructure is present to verify purchase receipts.</p>
+    <p><strong>Storage Location:</strong> Local SQLite database on your device<br>
+    <strong>Access:</strong> Only you have access to this data<br>
+    <strong>Deletion:</strong> Delete the app or use "Reset Everything" in App Settings</p>
+
+    <h3>2.2 Crash Reports & Diagnostics</h3>
+    <p>We use <strong>Sentry</strong> (a third-party service) to collect crash reports and diagnostic data when the app encounters errors. This helps us identify and fix bugs.</p>
+
+    <p><strong>What We Collect:</strong></p>
     <ul>
-        <li>We do <strong>not</strong> process or store your credit card or financial information.</li>
-        <li>All transactions are processed securely by the <strong>Google Play Store</strong>.</li>
+        <li>Crash logs and stack traces (technical error details)</li>
+        <li>Device information: model, operating system version, screen resolution</li>
+        <li>App version and build number</li>
+        <li>Breadcrumb data: sequence of user actions leading to a crash (e.g., "navigated to Stats screen → clicked Tournament → crash")</li>
+        <li>Performance data: screen load times, frame rates, slow operations</li>
     </ul>
-    <h2>4. Data Retention & Deletion</h2>
-    <p>Google Play policy requires us to clearly explain how you can delete your data.</p>
+
+    <p><strong>What We DO NOT Collect:</strong></p>
     <ul>
-        <li><strong>Retention:</strong> Since we do not run a cloud database, your data exists only as long as the app is installed on your device.</li>
-        <li><strong>Deletion:</strong> You can delete all your data at any time by <strong>uninstalling the application</strong>. Alternatively, you can use the "Reset Everything" or "Clear All Stats" options found within the App Settings to wipe data without uninstalling.</li>
+        <li>Your name, email, or any personally identifying information</li>
+        <li>Your game data, scores, or statistics</li>
+        <li>Location data</li>
+        <li>Contacts, photos, or other personal files</li>
     </ul>
-    <h2>5. Children’s Privacy</h2>
-    <p>Darty is a general audience app and does not knowingly collect personal information from children under the age of 13.</p>
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> vibecheckmcvibey@gmail.com</p>
+
+    <p><strong>Purpose:</strong> Fix bugs, improve app stability, and enhance performance<br>
+    <strong>Data Controller:</strong> Sentry (Functional Software, Inc.)<br>
+    <strong>Data Retention:</strong> Crash data is retained for 90 days, then automatically deleted<br>
+    <strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></p>
+
+    <div class="highlight">
+        <p><strong>Important:</strong> Crash data is <strong>not linked to your identity</strong>. We cannot identify who experienced a crash, only what went wrong technically.</p>
+    </div>
+
+    <h3>2.3 Device Identifiers</h3>
+    <p>The app may collect the following non-personal device identifiers:</p>
+
+    <p><strong>Android Advertising ID / App Set ID:</strong></p>
+    <ul>
+        <li><strong>Purpose:</strong> Subscription management, fraud prevention, and purchase verification (via RevenueCat)</li>
+        <li><strong>Usage:</strong> We do NOT use these identifiers for behavioral advertising or marketing tracking</li>
+        <li><strong>Control:</strong> You can reset your Advertising ID in Android Settings → Privacy → Ads</li>
+    </ul>
+
+    <p><strong>Installation ID:</strong></p>
+    <ul>
+        <li><strong>Purpose:</strong> Track app installations for over-the-air updates (via Expo)</li>
+        <li><strong>Usage:</strong> Deliver bug fixes and feature updates without requiring App Store downloads</li>
+    </ul>
+
+    <h3>2.4 Technical Data for App Functionality</h3>
+    <p>We collect minimal technical data required for the app to function:</p>
+    <ul>
+        <li>Device model and operating system version (for compatibility testing)</li>
+        <li>App version (to ensure you receive appropriate updates)</li>
+        <li>Timezone (for accurate timestamp display in game history)</li>
+    </ul>
+    <p><strong>Purpose:</strong> Ensure app compatibility and deliver updates<br>
+    <strong>Storage:</strong> Processed by Expo and Google Play Services</p>
+
+    <hr>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We use the following third-party services, each with their own privacy policies:</p>
+
+    <h3>3.1 Sentry (Crash Reporting)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Crash reporting and performance monitoring</li>
+        <li><strong>Data Collected:</strong> Crash logs, device info, performance metrics (see Section 2.2)</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
+        <li><strong>Data Location:</strong> United States (complies with GDPR)</li>
+    </ul>
+
+    <h3>3.2 RevenueCat (Subscription Management)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Manage in-app purchases and subscription entitlements</li>
+        <li><strong>Data Collected:</strong> Device identifiers (Advertising ID), purchase receipts, subscription status</li>
+        <li><strong>Financial Data:</strong> We do NOT store credit card information. All transactions are processed securely by Google Play Store.</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy/" target="_blank">https://www.revenuecat.com/privacy/</a></li>
+        <li><strong>Data Location:</strong> United States (complies with GDPR)</li>
+    </ul>
+
+    <h3>3.3 Expo (App Updates & Monitoring)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Deliver over-the-air updates and monitor app stability</li>
+        <li><strong>Data Collected:</strong> Installation ID, device model, OS version, app version</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+        <li><strong>Data Location:</strong> United States</li>
+    </ul>
+
+    <h3>3.4 Google Play Services</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Core Android functionality, app distribution, and in-app billing</li>
+        <li><strong>Data Collected:</strong> Device information, app usage data (managed by Google)</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>4. How We Use Your Data</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Type</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Game Data (Local)</td>
+                <td>Store your scores, stats, and preferences on your device</td>
+            </tr>
+            <tr>
+                <td>Crash Reports</td>
+                <td>Identify and fix bugs to improve app stability</td>
+            </tr>
+            <tr>
+                <td>Performance Data</td>
+                <td>Optimize app speed and responsiveness</td>
+            </tr>
+            <tr>
+                <td>Device Identifiers</td>
+                <td>Verify purchases and deliver updates</td>
+            </tr>
+            <tr>
+                <td>Technical Data</td>
+                <td>Ensure compatibility across devices and OS versions</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>We DO NOT:</strong></p>
+    <ul>
+        <li>Sell your data to third parties</li>
+        <li>Use your data for advertising or marketing</li>
+        <li>Share your data with anyone except the third-party services listed above (and only for the purposes described)</li>
+        <li>Track your location</li>
+        <li>Access your contacts, photos, or other personal files</li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Data Sharing & Disclosure</h2>
+    <p>We do not sell or rent your data. We only share data with:</p>
+    <ol>
+        <li><strong>Service Providers:</strong> Sentry, RevenueCat, and Expo (as described in Section 3)</li>
+        <li><strong>Legal Requirements:</strong> We may disclose data if required by law, court order, or government request</li>
+        <li><strong>Business Transfers:</strong> If Darty is acquired or merged, your data may transfer to the new owner (you will be notified)</li>
+    </ol>
+
+    <hr>
+
+    <h2>6. Data Retention & Deletion</h2>
+
+    <h3>6.1 Local Game Data</h3>
+    <ul>
+        <li><strong>Retention:</strong> Stored on your device indefinitely until you delete it</li>
+        <li><strong>Deletion Options:</strong>
+            <ol>
+                <li><strong>Uninstall the app</strong> → All data is permanently deleted</li>
+                <li><strong>App Settings → Reset Everything</strong> → Clears all local data without uninstalling</li>
+                <li><strong>App Settings → Clear Stats</strong> → Deletes game history while keeping player profiles</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h3>6.2 Crash Reports (Sentry)</h3>
+    <ul>
+        <li><strong>Retention:</strong> 90 days, then automatically deleted</li>
+        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request immediate deletion</li>
+    </ul>
+
+    <h3>6.3 Subscription Data (RevenueCat)</h3>
+    <ul>
+        <li><strong>Retention:</strong> As long as needed to manage your subscription and comply with tax/legal requirements</li>
+        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request deletion (after subscription ends)</li>
+    </ul>
+
+    <hr>
+
+    <h2>7. Your Rights</h2>
+    <p>Depending on your location, you may have the following rights:</p>
+    <ul>
+        <li><strong>Access:</strong> Request a copy of data we hold about you</li>
+        <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+        <li><strong>Deletion:</strong> Request deletion of your data (see Section 6)</li>
+        <li><strong>Objection:</strong> Object to certain data processing activities</li>
+        <li><strong>Portability:</strong> Request your data in a portable format (for locally stored data, export from App Settings)</li>
+    </ul>
+    <p><strong>To exercise these rights, contact us at:</strong> danrush730@gmail.com</p>
+
+    <hr>
+
+    <h2>8. International Data Transfers</h2>
+    <p>Darty is developed in the United States. Your data may be processed and stored in the United States and other countries where our service providers operate (Sentry, RevenueCat, Expo).</p>
+    <p>These services comply with GDPR and other international privacy regulations through:</p>
+    <ul>
+        <li>Standard Contractual Clauses (SCCs)</li>
+        <li>Privacy Shield frameworks (where applicable)</li>
+        <li>Adequate data protection measures</li>
+    </ul>
+
+    <hr>
+
+    <h2>9. Children's Privacy</h2>
+    <p>Darty is a general audience app suitable for all ages. We do not knowingly collect personal information from children under 13 years old.</p>
+    <p>If you believe we have inadvertently collected data from a child under 13, please contact us immediately at danrush730@gmail.com, and we will delete it promptly.</p>
+
+    <hr>
+
+    <h2>10. Security</h2>
+    <p>We take reasonable measures to protect your data:</p>
+    <ul>
+        <li>Local game data is stored securely on your device using Android's app sandboxing</li>
+        <li>Data transmitted to third-party services (Sentry, RevenueCat) is encrypted in transit using HTTPS/TLS</li>
+        <li>We use industry-standard security practices for all integrations</li>
+    </ul>
+    <p>However, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+
+    <hr>
+
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do:</p>
+    <ol>
+        <li>The "Last Updated" date at the top will change</li>
+        <li>We will notify you via an in-app notice or update notes</li>
+        <li>Continued use of the app after changes means you accept the updated policy</li>
+    </ol>
+    <p><strong>Your Responsibility:</strong> Review this policy periodically for changes</p>
+
+    <hr>
+
+    <div class="summary">
+        <h2>Summary (Plain English)</h2>
+        <p><strong>What We Collect:</strong></p>
+        <ul>
+            <li>🎯 Game scores & stats (stored on YOUR device only, never uploaded)</li>
+            <li>🐛 Crash reports (to fix bugs)</li>
+            <li>📱 Device info (model, OS version - for compatibility)</li>
+            <li>🔢 Device IDs (for purchases and updates)</li>
+        </ul>
+
+        <p><strong>What We DON'T Collect:</strong></p>
+        <ul>
+            <li>❌ Your name, email, or personal info</li>
+            <li>❌ Your location</li>
+            <li>❌ Your contacts or photos</li>
+            <li>❌ Anything for advertising</li>
+        </ul>
+
+        <p><strong>Who Sees Your Data:</strong></p>
+        <ul>
+            <li>Sentry (crash reports) - helps us fix bugs</li>
+            <li>RevenueCat (purchases) - manages subscriptions</li>
+            <li>Expo (updates) - delivers bug fixes</li>
+            <li>Nobody else!</li>
+        </ul>
+
+        <p><strong>How to Delete Your Data:</strong></p>
+        <ul>
+            <li>Uninstall the app (deletes everything)</li>
+            <li>Or: App Settings → Reset Everything</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data:</p>
+        <p><strong>Email:</strong> danrush730@gmail.com<br>
+        <strong>Response Time:</strong> We aim to respond within 7 business days</p>
+    </div>
+
+    <hr>
+
+    <p style="text-align: center; color: #6b7280; font-size: 0.9em; margin-top: 40px;">
+        This Privacy Policy is governed by the laws of the United States.
+    </p>
 </body>
+
 </html>
