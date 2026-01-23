@@ -167,20 +167,12 @@
         <p><strong>Important:</strong> Crash data is <strong>not linked to your identity</strong>. We cannot identify who experienced a crash, only what went wrong technically.</p>
     </div>
 
-    <h3>2.3 Device Identifiers</h3>
-    <p>The app may collect the following non-personal device identifiers:</p>
-
-    <p><strong>Android Advertising ID / App Set ID:</strong></p>
-    <ul>
-        <li><strong>Purpose:</strong> Subscription management, fraud prevention, and purchase verification (via RevenueCat)</li>
-        <li><strong>Usage:</strong> We do NOT use these identifiers for behavioral advertising or marketing tracking</li>
-        <li><strong>Control:</strong> You can reset your Advertising ID in Android Settings → Privacy → Ads</li>
-    </ul>
-
-    <p><strong>Installation ID:</strong></p>
+    <h3>2.3 Installation ID</h3>
+    <p>We collect a unique installation identifier to deliver app updates:</p>
     <ul>
         <li><strong>Purpose:</strong> Track app installations for over-the-air updates (via Expo)</li>
         <li><strong>Usage:</strong> Deliver bug fixes and feature updates without requiring App Store downloads</li>
+        <li><strong>Data Type:</strong> Anonymous installation ID (not linked to your identity)</li>
     </ul>
 
     <h3>2.4 Technical Data for App Functionality</h3>
@@ -206,22 +198,27 @@
         <li><strong>Data Location:</strong> United States (complies with GDPR)</li>
     </ul>
 
-    <h3>3.2 RevenueCat (Subscription Management)</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Manage in-app purchases and subscription entitlements</li>
-        <li><strong>Data Collected:</strong> Device identifiers (Advertising ID), purchase receipts, subscription status</li>
-        <li><strong>Financial Data:</strong> We do NOT store credit card information. All transactions are processed securely by Google Play Store.</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy/" target="_blank">https://www.revenuecat.com/privacy/</a></li>
-        <li><strong>Data Location:</strong> United States (complies with GDPR)</li>
-    </ul>
-
-    <h3>3.3 Expo (App Updates & Monitoring)</h3>
+    <h3>3.2 Expo (App Updates & Monitoring)</h3>
     <ul>
         <li><strong>Purpose:</strong> Deliver over-the-air updates and monitor app stability</li>
         <li><strong>Data Collected:</strong> Installation ID, device model, OS version, app version</li>
         <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
         <li><strong>Data Location:</strong> United States</li>
     </ul>
+
+    <h3>3.3 EAS Insights (Analytics)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Understand app usage patterns and improve user experience</li>
+        <li><strong>Data Collected:</strong> Session duration, app opens/closes, device model, OS version, app version</li>
+        <li><strong>What We Track:</strong> How often the app is used, session lengths, which app versions are active</li>
+        <li><strong>What We DON'T Track:</strong> Your game data, scores, personal information, or specific in-app actions</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
+        <li><strong>Data Location:</strong> United States</li>
+    </ul>
+
+    <div class="highlight">
+        <p><strong>Important:</strong> Analytics data is <strong>not linked to your identity</strong>. We see aggregate metrics like "500 users opened the app today" but cannot identify individual users.</p>
+    </div>
 
     <h3>3.4 Google Play Services</h3>
     <ul>
@@ -254,12 +251,16 @@
                 <td>Optimize app speed and responsiveness</td>
             </tr>
             <tr>
-                <td>Device Identifiers</td>
-                <td>Verify purchases and deliver updates</td>
+                <td>Installation ID</td>
+                <td>Deliver over-the-air updates</td>
             </tr>
             <tr>
                 <td>Technical Data</td>
                 <td>Ensure compatibility across devices and OS versions</td>
+            </tr>
+            <tr>
+                <td>Analytics Data</td>
+                <td>Understand usage patterns and improve app experience</td>
             </tr>
         </tbody>
     </table>
@@ -278,7 +279,7 @@
     <h2>5. Data Sharing & Disclosure</h2>
     <p>We do not sell or rent your data. We only share data with:</p>
     <ol>
-        <li><strong>Service Providers:</strong> Sentry, RevenueCat, and Expo (as described in Section 3)</li>
+        <li><strong>Service Providers:</strong> Sentry, Expo, and EAS Insights (as described in Section 3)</li>
         <li><strong>Legal Requirements:</strong> We may disclose data if required by law, court order, or government request</li>
         <li><strong>Business Transfers:</strong> If Darty is acquired or merged, your data may transfer to the new owner (you will be notified)</li>
     </ol>
@@ -305,10 +306,10 @@
         <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request immediate deletion</li>
     </ul>
 
-    <h3>6.3 Subscription Data (RevenueCat)</h3>
+    <h3>6.3 Analytics Data (EAS Insights)</h3>
     <ul>
-        <li><strong>Retention:</strong> As long as needed to manage your subscription and comply with tax/legal requirements</li>
-        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request deletion (after subscription ends)</li>
+        <li><strong>Retention:</strong> Retained as long as your app is active, aggregated data only</li>
+        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request deletion</li>
     </ul>
 
     <hr>
@@ -327,7 +328,7 @@
     <hr>
 
     <h2>8. International Data Transfers</h2>
-    <p>Darty is developed in the United States. Your data may be processed and stored in the United States and other countries where our service providers operate (Sentry, RevenueCat, Expo).</p>
+    <p>Darty is developed in the United States. Your data may be processed and stored in the United States and other countries where our service providers operate (Sentry, Expo, EAS Insights).</p>
     <p>These services comply with GDPR and other international privacy regulations through:</p>
     <ul>
         <li>Standard Contractual Clauses (SCCs)</li>
@@ -347,7 +348,7 @@
     <p>We take reasonable measures to protect your data:</p>
     <ul>
         <li>Local game data is stored securely on your device using Android's app sandboxing</li>
-        <li>Data transmitted to third-party services (Sentry, RevenueCat) is encrypted in transit using HTTPS/TLS</li>
+        <li>Data transmitted to third-party services (Sentry, Expo, EAS Insights) is encrypted in transit using HTTPS/TLS</li>
         <li>We use industry-standard security practices for all integrations</li>
     </ul>
     <p>However, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
@@ -371,8 +372,9 @@
         <ul>
             <li>🎯 Game scores & stats (stored on YOUR device only, never uploaded)</li>
             <li>🐛 Crash reports (to fix bugs)</li>
+            <li>📊 Anonymous usage analytics (session time, app opens)</li>
             <li>📱 Device info (model, OS version - for compatibility)</li>
-            <li>🔢 Device IDs (for purchases and updates)</li>
+            <li>🔢 Installation ID (for app updates)</li>
         </ul>
 
         <p><strong>What We DON'T Collect:</strong></p>
@@ -386,7 +388,7 @@
         <p><strong>Who Sees Your Data:</strong></p>
         <ul>
             <li>Sentry (crash reports) - helps us fix bugs</li>
-            <li>RevenueCat (purchases) - manages subscriptions</li>
+            <li>EAS Insights (analytics) - shows us anonymous usage patterns</li>
             <li>Expo (updates) - delivers bug fixes</li>
             <li>Nobody else!</li>
         </ul>
