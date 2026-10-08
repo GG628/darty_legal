@@ -112,302 +112,182 @@
 
 <body>
     <h1>Privacy Policy for Darty</h1>
-    <p class="last-updated"><strong>Last Updated:</strong> February 24, 2026</p>
+    <p class="last-updated"><strong>Last Updated:</strong> 8 October 2026</p>
 
-    <p>Darty ("we", "our", or "us") provides a darts scoring and statistics application. This Privacy Policy explains what data we collect, how we use it, and your rights regarding your information.</p>
-
-    <hr>
-
-    <h2>1. Overview</h2>
-    <p>Darty is designed to work primarily <strong>offline</strong> and does not require you to create an account or sign in. All game data, statistics, and user profiles are stored <strong>locally on your device</strong>. We do not operate a cloud database or store your personal information on our servers.</p>
-
-    <hr>
-
-    <h2>2. Data We Collect</h2>
-
-    <h3>2.1 Game Data (Stored Locally Only)</h3>
-    <p>The following data is stored <strong>only on your device</strong> and is never transmitted to our servers:</p>
-    <ul>
-        <li>Player names and profiles</li>
-        <li>Game scores and statistics</li>
-        <li>Tournament results and history</li>
-        <li>Custom game settings and preferences</li>
-        <li>Achievement progress</li>
-    </ul>
-    <p><strong>Storage Location:</strong> Local SQLite database on your device<br>
-    <strong>Access:</strong> Only you have access to this data<br>
-    <strong>Deletion:</strong> Delete the app or use "Reset Everything" in App Settings</p>
-
-    <h3>2.2 Crash Reports & Diagnostics</h3>
-    <p>We use <strong>Sentry</strong> (a third-party service) to collect crash reports and diagnostic data when the app encounters errors. This helps us identify and fix bugs.</p>
-
-    <p><strong>What We Collect:</strong></p>
-    <ul>
-        <li>Crash logs and stack traces (technical error details)</li>
-        <li>Device information: model, operating system version, screen resolution</li>
-        <li>App version and build number</li>
-        <li>Breadcrumb data: sequence of user actions leading to a crash (e.g., "navigated to Stats screen → clicked Tournament → crash")</li>
-        <li>Performance data: screen load times, frame rates, slow operations</li>
-    </ul>
-
-    <p><strong>What We DO NOT Collect:</strong></p>
-    <ul>
-        <li>Your name, email, or any personally identifying information</li>
-        <li>Your game data, scores, or statistics</li>
-        <li>Location data</li>
-        <li>Contacts, photos, or other personal files</li>
-    </ul>
-
-    <p><strong>Purpose:</strong> Fix bugs, improve app stability, and enhance performance<br>
-    <strong>Data Controller:</strong> Sentry (Functional Software, Inc.)<br>
-    <strong>Data Retention:</strong> Crash data is retained for 90 days, then automatically deleted<br>
-    <strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></p>
-
-    <div class="highlight">
-        <p><strong>Important:</strong> Crash data is <strong>not linked to your identity</strong>. We cannot identify who experienced a crash, only what went wrong technically.</p>
-    </div>
-
-    <h3>2.3 Installation ID</h3>
-    <p>We collect a unique installation identifier to deliver app updates:</p>
-    <ul>
-        <li><strong>Purpose:</strong> Track app installations for over-the-air updates (via Expo)</li>
-        <li><strong>Usage:</strong> Deliver bug fixes and feature updates without requiring App Store downloads</li>
-        <li><strong>Data Type:</strong> Anonymous installation ID (not linked to your identity)</li>
-    </ul>
-
-    <h3>2.4 Technical Data for App Functionality</h3>
-    <p>We collect minimal technical data required for the app to function:</p>
-    <ul>
-        <li>Device model and operating system version (for compatibility testing)</li>
-        <li>App version (to ensure you receive appropriate updates)</li>
-        <li>Timezone (for accurate timestamp display in game history)</li>
-    </ul>
-    <p><strong>Purpose:</strong> Ensure app compatibility and deliver updates<br>
-    <strong>Storage:</strong> Processed by Expo and Google Play Services</p>
-
-    <hr>
-
-    <h2>3. Third-Party Services</h2>
-    <p>We use the following third-party services, each with their own privacy policies:</p>
-
-    <h3>3.1 Sentry (Crash Reporting)</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Crash reporting and performance monitoring</li>
-        <li><strong>Data Collected:</strong> Crash logs, device info, performance metrics (see Section 2.2)</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></li>
-    </ul>
-
-    <h3>3.2 Expo (App Updates & Monitoring)</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Deliver over-the-air updates and monitor app stability</li>
-        <li><strong>Data Collected:</strong> Installation ID, device model, OS version, app version</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-    </ul>
-
-    <h3>3.3 EAS Insights (Analytics)</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Understand app usage patterns and improve user experience</li>
-        <li><strong>Data Collected:</strong> Session duration, app opens/closes, device model, OS version, app version</li>
-        <li><strong>What We Track:</strong> How often the app is used, session lengths, which app versions are active</li>
-        <li><strong>What We DON'T Track:</strong> Your game data, scores, personal information, or specific in-app actions</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://expo.dev/privacy" target="_blank">https://expo.dev/privacy</a></li>
-    </ul>
-
-    <h3>3.4 PostHog (Usage Analytics)</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Understand how users interact with the app to improve features and inform product decisions</li>
-        <li><strong>Data Collected:</strong> Anonymous usage events (e.g. app opened, game started, training session started), device model, OS version, app version</li>
-        <li><strong>What We Track:</strong> Which features are used, game modes played, session frequency</li>
-        <li><strong>What We DON'T Track:</strong> Your game data, scores, player names, or any personally identifying information</li>
-        <li><strong>Server Location:</strong> EU (eu.i.posthog.com)</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></li>
-    </ul>
-
-    <div class="highlight">
-        <p><strong>Important:</strong> Analytics data is <strong>not linked to your identity</strong>. We see aggregate metrics like "500 users opened the app today" but cannot identify individual users.</p>
-    </div>
-
-    <h3>3.4 Google Play Services</h3>
-    <ul>
-        <li><strong>Purpose:</strong> Core Android functionality, app distribution, and in-app billing</li>
-        <li><strong>Data Collected:</strong> Device information, app usage data (managed by Google)</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-    </ul>
-
-    <hr>
-
-    <h2>4. How We Use Your Data</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Data Type</th>
-                <th>Purpose</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Game Data (Local)</td>
-                <td>Store your scores, stats, and preferences on your device</td>
-            </tr>
-            <tr>
-                <td>Crash Reports</td>
-                <td>Identify and fix bugs to improve app stability</td>
-            </tr>
-            <tr>
-                <td>Performance Data</td>
-                <td>Optimize app speed and responsiveness</td>
-            </tr>
-            <tr>
-                <td>Installation ID</td>
-                <td>Deliver over-the-air updates</td>
-            </tr>
-            <tr>
-                <td>Technical Data</td>
-                <td>Ensure compatibility across devices and OS versions</td>
-            </tr>
-            <tr>
-                <td>Analytics Data</td>
-                <td>Understand usage patterns and improve app experience</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p><strong>We DO NOT:</strong></p>
-    <ul>
-        <li>Sell your data to third parties</li>
-        <li>Use your data for advertising or marketing</li>
-        <li>Share your data with anyone except the third-party services listed above (and only for the purposes described)</li>
-        <li>Track your location</li>
-        <li>Access your contacts, photos, or other personal files</li>
-    </ul>
-
-    <hr>
-
-    <h2>5. Data Sharing & Disclosure</h2>
-    <p>We do not sell or rent your data. We only share data with:</p>
-    <ol>
-        <li><strong>Service Providers:</strong> Sentry, Expo, EAS Insights, and PostHog (as described in Section 3)</li>
-        <li><strong>Legal Requirements:</strong> We may disclose data if required by law, court order, or government request</li>
-        <li><strong>Business Transfers:</strong> If Darty is acquired or merged, your data may transfer to the new owner (you will be notified)</li>
-    </ol>
-
-    <hr>
-
-    <h2>6. Data Retention & Deletion</h2>
-
-    <h3>6.1 Local Game Data</h3>
-    <ul>
-        <li><strong>Retention:</strong> Stored on your device indefinitely until you delete it</li>
-        <li><strong>Deletion Options:</strong>
-            <ol>
-                <li><strong>Uninstall the app</strong> → All data is permanently deleted</li>
-                <li><strong>App Settings → Reset Everything</strong> → Clears all local data without uninstalling</li>
-                <li><strong>App Settings → Clear Stats</strong> → Deletes game history while keeping player profiles</li>
-            </ol>
-        </li>
-    </ul>
-
-    <h3>6.2 Crash Reports (Sentry)</h3>
-    <ul>
-        <li><strong>Retention:</strong> 90 days, then automatically deleted</li>
-        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request immediate deletion</li>
-    </ul>
-
-    <h3>6.3 Analytics Data (EAS Insights &amp; PostHog)</h3>
-    <ul>
-        <li><strong>Retention:</strong> Retained as long as your app is active, aggregated data only</li>
-        <li><strong>Deletion:</strong> Contact us at danrush730@gmail.com to request deletion</li>
-    </ul>
-
-    <hr>
-
-    <h2>7. Your Rights</h2>
-    <p>Depending on your location, you may have the following rights:</p>
-    <ul>
-        <li><strong>Access:</strong> Request a copy of data we hold about you</li>
-        <li><strong>Correction:</strong> Request correction of inaccurate data</li>
-        <li><strong>Deletion:</strong> Request deletion of your data (see Section 6)</li>
-        <li><strong>Objection:</strong> Object to certain data processing activities</li>
-        <li><strong>Portability:</strong> Request your data in a portable format (for locally stored data, export from App Settings)</li>
-    </ul>
-    <p><strong>To exercise these rights, contact us at:</strong> danrush730@gmail.com</p>
-
-    <hr>
-
-    <h2>8. International Data Transfers</h2>
-    <p>Darty is developed and operated in the United Kingdom.</p>
-    <p>While we are based in the UK, the third-party service providers we use (such as Sentry and Expo) may process technical data in their respective global data centers to provide crash reporting and update services. These providers operate under their own privacy policies and international data transfer frameworks.</p>
-
-    <hr>
-
-    <h2>9. Security</h2>
-    <p>We take reasonable measures to protect your data:</p>
-    <ul>
-        <li>Local game data is stored securely on your device using Android's app sandboxing</li>
-        <li>Data transmitted to third-party services (Sentry, Expo, EAS Insights, PostHog) is encrypted in transit using HTTPS/TLS</li>
-        <li>We use industry-standard security practices for all integrations</li>
-    </ul>
-    <p>However, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
-
-    <hr>
-
-    <h2>10. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do:</p>
-    <ol>
-        <li>The "Last Updated" date at the top will change</li>
-        <li>We will notify you via an in-app notice or update notes</li>
-        <li>Continued use of the app after changes means you accept the updated policy</li>
-    </ol>
-    <p><strong>Your Responsibility:</strong> Review this policy periodically for changes</p>
-
-    <hr>
+    <p>Darty ("we", "our" or "us") is a darts scoring and statistics app, developed and operated in the United Kingdom. This policy explains what data Darty collects, why, who can see it, and how to delete it.</p>
 
     <div class="summary">
         <h2>Summary (Plain English)</h2>
-        <p><strong>What We Collect:</strong></p>
         <ul>
-            <li>Game scores & stats (stored on YOUR device only, never uploaded)</li>
-            <li>Crash reports (to fix bugs)</li>
-            <li>Anonymous usage analytics (session time, app opens)</li>
-            <li>Device info (model, OS version - for compatibility)</li>
-            <li>Installation ID (for app updates)</li>
-        </ul>
-
-        <p><strong>What We DON'T Collect:</strong></p>
-        <ul>
-            <li>Your name, email, or personal info</li>
-            <li>Your location</li>
-            <li>Your contacts or photos</li>
-            <li>Anything for advertising</li>
-        </ul>
-
-        <p><strong>Who Sees Your Data:</strong></p>
-        <ul>
-            <li>Sentry (crash reports) - helps us fix bugs</li>
-            <li>EAS Insights (analytics) - shows us anonymous session patterns</li>
-            <li>PostHog (analytics) - shows us anonymous feature usage patterns (EU servers)</li>
-            <li>Expo (updates) - delivers bug fixes</li>
-            <li>Nobody else!</li>
-        </ul>
-
-        <p><strong>How to Delete Your Data:</strong></p>
-        <ul>
-            <li>Uninstall the app (deletes everything)</li>
-            <li>Or: App Settings → Reset Everything</li>
+            <li><strong>No account needed.</strong> Darty works fully offline. Your matches and stats live on your phone.</li>
+            <li><strong>Accounts are optional.</strong> If you sign in with Apple or Google, Darty keeps a private backup of your stats and lets you add friends, share matches, give kudos and comment.</li>
+            <li><strong>Your backup is private.</strong> Only you can restore it. Friends never see it.</li>
+            <li><strong>Friends see the matches you share</strong> &mdash; a summary of each match, not your whole database. You can keep any match private.</li>
+            <li><strong>Delete your account in the app</strong> and everything on our servers goes with it. Your stats stay on your phone.</li>
+            <li><strong>We never sell your data</strong> or use it for advertising.</li>
         </ul>
     </div>
 
+    <hr>
+
+    <h2>1. Data Stored on Your Device</h2>
+    <p>Whether or not you have an account, Darty stores these <strong>on your device</strong>:</p>
+    <ul>
+        <li>Matches, scores and statistics</li>
+        <li>Tournament, training and career progress</li>
+        <li>Your profile (name, nationality, avatar), your dart sets and the players you play against</li>
+        <li>Checkout photos you choose to take</li>
+        <li>Settings and achievements</li>
+    </ul>
+    <p>Without an account, none of this leaves your device. With an account, see Section 2 for what is copied to our servers.</p>
+    <p><strong>Deletion:</strong> uninstall the app, or use <em>Settings &rarr; Data Management</em> to reset your stats.</p>
+
+    <hr>
+
+    <h2>2. If You Create an Account (Optional)</h2>
+    <p>Signing in is optional. It turns on stats backups and the social features. If you sign in, we store the following on our servers, provided by Supabase in the EU (Ireland).</p>
+
+    <h3>2.1 Sign-in</h3>
+    <p>You sign in with <strong>Sign in with Apple</strong> or <strong>Google</strong>. We receive a unique account identifier and, from the provider, your email address (Apple may give us a private relay address instead) and your name if you choose to share it. We use your email only to run your account. It is never shown to other players.</p>
+
+    <h3>2.2 Your profile</h3>
+    <p>Your <strong>username</strong>, <strong>display name</strong>, <strong>nationality</strong> and <strong>avatar</strong> (its settings, and a link to its image). Your profile is visible to other signed-in players, who can find you by searching for your username, unless one of you has blocked the other.</p>
+
+    <h3>2.3 Your stats backup</h3>
+    <p>A compressed copy of the stats database on your phone (matches, legs, dart sets, tournaments, career and settings), so a new phone can restore it. Checkout photos are not included. <strong>Only you can access your backup.</strong> We keep one copy, replaced each time you back up.</p>
+
+    <h3>2.4 Shared matches (the feed)</h3>
+    <p>For each match, a summary: when it was played, the game mode and format, the score, averages, darts thrown, best checkout, fastest leg, how your visits were scored, the venue, the name of your dart set, your opponent's name and the title of the match. For a real opponent (someone you entered as a local player) we upload their <strong>first name only</strong>. When you first sign in, your earlier matches are uploaded too, but your friends are not notified about them.</p>
+    <p>Shared matches are visible to <strong>you and your accepted friends</strong>. You can make any match <strong>private</strong> from its summary, so only you see it.</p>
+
+    <h3>2.5 Friends, kudos and comments</h3>
+    <p>Your friend requests and friends; the kudos and comments you give and receive; the players you block; and any reports you make about content or players. Kudos and comments are visible to anyone who can see the match they are on.</p>
+
+    <h3>2.6 Notifications</h3>
+    <p>If you allow notifications, we store a push token for your device and your notification settings, and keep a record of the notifications we send you (for example, "Dave gave you kudos"). Notifications are delivered through Expo's push service and Apple Push Notification service or Firebase Cloud Messaging, and may include the avatar image of the player they are about.</p>
+
+    <hr>
+
+    <h2>3. Optional Email for Updates</h2>
+    <p>In <em>Settings &rarr; Stay in the loop</em> you can give us an email address so we can reply to your feedback or tell you about major updates. This is separate from your account. It is stored with our analytics provider, PostHog (EU), against your app installation, and you can remove it at any time from the same screen.</p>
+
+    <hr>
+
+    <h2>4. Analytics, Crash Reports and Updates</h2>
+
+    <h3>4.1 Usage analytics (PostHog)</h3>
+    <ul>
+        <li><strong>What:</strong> app usage events (for example, app opened, match completed, training started), the screens you view, device model, operating system and app version, and answers to optional in-app surveys.</li>
+        <li><strong>Linked to:</strong> a random identifier for your installation (and your email, if you gave one in Section 3). Analytics are not linked to your Darty account.</li>
+        <li><strong>Not included:</strong> your scores, stats or player names.</li>
+        <li><strong>Where:</strong> EU (eu.i.posthog.com). <a href="https://posthog.com/privacy" target="_blank">PostHog privacy policy</a></li>
+    </ul>
+
+    <h3>4.2 Crash reports (Sentry)</h3>
+    <ul>
+        <li><strong>What:</strong> error details, device model, operating system and app version, and the sequence of app actions leading to a crash.</li>
+        <li><strong>Not included:</strong> your name, email or game data.</li>
+        <li><strong>Retention:</strong> 90 days. <a href="https://sentry.io/privacy/" target="_blank">Sentry privacy policy</a></li>
+    </ul>
+
+    <h3>4.3 App updates and stability (Expo, EAS Insights)</h3>
+    <ul>
+        <li><strong>What:</strong> an anonymous installation identifier, device model, operating system and app version, and session information, used to deliver over-the-air updates and monitor stability.</li>
+        <li><a href="https://expo.dev/privacy" target="_blank">Expo privacy policy</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Service Providers</h2>
+    <table>
+        <thead>
+            <tr><th>Provider</th><th>What for</th><th>Where</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Supabase</td><td>Accounts, backups, the feed, friends, kudos, comments and notifications (only if you create an account)</td><td>EU (Ireland)</td></tr>
+            <tr><td>Apple, Google</td><td>Sign-in; delivering push notifications; app distribution</td><td>Global</td></tr>
+            <tr><td>Expo</td><td>App updates; sending push notifications to Apple and Google</td><td>United States</td></tr>
+            <tr><td>DiceBear</td><td>Generating avatar images from avatar settings</td><td>Global</td></tr>
+            <tr><td>PostHog</td><td>Usage analytics; your optional email</td><td>EU</td></tr>
+            <tr><td>Sentry</td><td>Crash reports</td><td>United States</td></tr>
+        </tbody>
+    </table>
+    <p>Each provider processes data only to provide its service to us, under its own privacy policy. Where data is processed outside the UK, it is protected by the providers' international data transfer safeguards.</p>
+
+    <hr>
+
+    <h2>6. Who Can See What</h2>
+    <table>
+        <thead>
+            <tr><th>Data</th><th>Who can see it</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Stats on your phone</td><td>Only you</td></tr>
+            <tr><td>Your stats backup</td><td>Only you</td></tr>
+            <tr><td>Your profile (username, name, nationality, avatar)</td><td>Signed-in players, except anyone blocked either way</td></tr>
+            <tr><td>Your shared matches, and kudos and comments on them</td><td>You and your accepted friends</td></tr>
+            <tr><td>Your private matches</td><td>Only you</td></tr>
+            <tr><td>Your email address</td><td>Nobody but us</td></tr>
+        </tbody>
+    </table>
+    <p>We access account data only to run the service, deal with reports, or where the law requires it.</p>
+
+    <hr>
+
+    <h2>7. Deleting Your Data</h2>
+    <ul>
+        <li><strong>Delete your account:</strong> <em>Settings &rarr; Account &amp; backup &rarr; Delete account</em>. This permanently deletes your profile, backup, shared matches, kudos, comments, friendships, blocks, devices and notifications from our servers. The stats on your phone are not affected.</li>
+        <li><strong>Sign out:</strong> keeps your account and backup so you can sign back in.</li>
+        <li><strong>Delete a match or a comment:</strong> deleting a match on your phone removes it from the feed at the next sync; you can delete your own comments, and any comment on your own match.</li>
+        <li><strong>Everything else:</strong> email danrush730@gmail.com and we will delete analytics, crash or account data we hold about you.</li>
+    </ul>
+
+    <hr>
+
+    <h2>8. Community Content</h2>
+    <p>Comments, match titles, usernames and display names are visible to other players. We filter objectionable words, you can report comments and players from the app, and you can block anyone. We review reports and remove content or accounts that break our <a href="terms.html">Terms of Service</a>.</p>
+
+    <hr>
+
+    <h2>9. Children</h2>
+    <p>Darty can be used by anyone without an account. You must be <strong>13 or older</strong> to create an account. If you believe a child under 13 has created one, contact us and we will delete it.</p>
+
+    <hr>
+
+    <h2>10. What We Don't Do</h2>
+    <ul>
+        <li>We don't sell or rent your data.</li>
+        <li>We don't use your data for advertising.</li>
+        <li>We don't track your location, or access your contacts or other files. (Checkout photos are taken only when you choose and stay on your phone.)</li>
+    </ul>
+
+    <hr>
+
+    <h2>11. Your Rights</h2>
+    <p>Under UK data protection law you can ask to access, correct, delete or receive a copy of your personal data, and object to or restrict how we use it. Most of this you can do in the app (see Section 7). For anything else, email danrush730@gmail.com. You can also complain to the UK Information Commissioner's Office (ico.org.uk).</p>
+    <p>We rely on these lawful bases: providing the service you ask for (your account, backups and social features); our legitimate interests in keeping the app working and improving it (crash reports and analytics); and your consent (optional email, and push notifications).</p>
+
+    <hr>
+
+    <h2>12. Security</h2>
+    <p>Data is encrypted in transit (HTTPS). Account data is held by Supabase, where access rules ensure players can read only what this policy allows, and data is encrypted at rest. No system is perfectly secure, but we take reasonable measures to protect your data.</p>
+
+    <hr>
+
+    <h2>13. Changes to This Policy</h2>
+    <p>We may update this policy. The "Last Updated" date will change, and for significant changes we will let you know in the app or in the update notes.</p>
+
     <div class="contact">
         <h2>Contact Us</h2>
-        <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data:</p>
+        <p>Questions, requests or concerns about your data:</p>
         <p><strong>Email:</strong> danrush730@gmail.com<br>
-        <strong>Response Time:</strong> We aim to respond within 7 business days</p>
+        <strong>Response time:</strong> we aim to respond within 7 days.</p>
     </div>
 
     <hr>
 
     <p style="text-align: center; color: #6b7280; font-size: 0.9em; margin-top: 40px;">
-        This Privacy Policy is governed by the laws of the United Kingdom
+        This Privacy Policy is governed by the laws of England and Wales.
     </p>
 </body>
 
